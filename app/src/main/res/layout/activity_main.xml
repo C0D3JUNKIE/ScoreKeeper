@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/football_field">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".7"
+                android:background="@android:color/white"
+                android:fontFamily="san-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/team_one"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/alabama_logo"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_alabama_logo_fore"
+                android:contentDescription="@string/alabama_logo"/>
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="56sp"
+                />
+
+            <Button
+                android:id="@+id/team_a_touchdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addTouchDownForTeamA"
+                android:text="@string/touch_down"/>
+
+            <Button
+                android:id="@+id/team_a_fieldgoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addFieldGoalForTeamA"
+                android:text="@string/fieldgoal"/>
+
+            <Button
+                android:id="@+id/team_a_extrapoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addOnePointForTeamA"
+                android:text="@string/extra_point"/>
+
+            <Button
+                android:id="@+id/team_a_twopoint_conversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addTwoPointsForTeamA"
+                android:text="@string/twopoint_conversion"/>
+
+            <Button
+                android:id="@+id/team_a_safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addTwoPointsForTeamA"
+                android:text="@string/safety"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".7"
+                android:background="@android:color/white"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="san-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/team_two"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/georgia_logo"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_georgia_logo_foreground"
+                android:contentDescription="@string/georgia_logo"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="56sp"/>
+
+            <Button
+                android:id="@+id/team_b_touchdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addTouchDownForTeamB"
+                android:text="@string/touch_down"/>
+
+            <Button
+                android:id="@+id/team_b_fieldgoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addFieldGoalForTeamB"
+                android:text="@string/fieldgoal"/>
+
+            <Button
+                android:id="@+id/team_b_extra_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addOnePointForTeamB"
+                android:text="@string/extra_point"/>
+
+            <Button
+                android:id="@+id/team_b_twopoint_conversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addTwoPointsForTeamB"
+                android:text="@string/twopoint_conversion"/>
+
+            <Button
+                android:id="@+id/team_b_safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:alpha=".85"
+                android:gravity="center_horizontal"
+                android:onClick="addTwoPointsForTeamB"
+                android:text="@string/safety"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:layout_weight=".5"
+        android:gravity="center_horizontal"
+        android:onClick="resetButton"
+        android:text="@string/reset_button"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

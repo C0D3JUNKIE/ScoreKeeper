@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">College Championship - Score Keeper</string>
+    <string name="touch_down">TOUCH DOWN!</string>
+    <string name="fieldgoal">Field Goal</string>
+    <string name="extra_point">Extra Point!</string>
+    <string name="twopoint_conversion">Two Point Conversion</string>
+    <string name="safety">Safety</string>
+    <string name="reset_button">Reset</string>
+    <string name="team_one">Alabama</string>
+    <string name="team_two">Georgia</string>
+    <string name="alabama_logo">alabamaLogo</string>
+    <string name="georgia_logo">georgiaLogo</string>
+</resources>
